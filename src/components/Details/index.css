@@ -1,0 +1,24 @@
+@keyframes changeBorderColor {
+  0% {
+    border-color: rgb(226, 111, 111);
+  }
+  25% {
+    border-color: rgb(107, 107, 215);
+  }
+  50% {
+    border-color: rgb(122, 215, 122);
+  }
+  75% {
+    border-color: rgb(200, 200, 104);
+  }
+  100% {
+    border-color: rgb(192, 87, 194);
+  }
+}
+.dLi {
+  margin: 20px;
+  padding: 5px;
+  border: red 3px solid;
+  animation: changeBorderColor 5s infinite;
+  border-radius: 5px;
+}

@@ -1,0 +1,155 @@
+.homeDiv1 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://i.pinimg.com/originals/5e/37/6c/5e376c69b419d82fe671ec9dcd075a65.gif');
+  padding: 20px;
+}
+.homeDiv2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+}
+.logout {
+  cursor: pointer;
+  background-color: red;
+  animation: changeBackgroundcolor 5s infinite;
+  border-radius: 10px;
+  height: 30%;
+  width: 5%;
+  border-color: transparent;
+  color: white;
+  font-weight: bold;
+}
+.homeImg {
+  padding-left: 170px;
+  padding-right: 150px;
+  border-radius: 10px;
+  border-width: 3px;
+  height: 100%;
+  width: 50%;
+}
+
+.homeUl {
+  display: flex;
+  flex-wrap: wrap;
+  height: 70%;
+  width: 100%;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  overflow-y: scroll;
+}
+@keyframes changeBorderColor {
+  0% {
+    border-color: rgb(226, 111, 111);
+  }
+  25% {
+    border-color: rgb(107, 107, 215);
+  }
+  50% {
+    border-color: rgb(122, 215, 122);
+  }
+  75% {
+    border-color: rgb(200, 200, 104);
+  }
+  100% {
+    border-color: rgb(192, 87, 194);
+  }
+}
+.homeLi {
+  height: 45%;
+  width: 25%;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 3px solid red;
+  animation: changeBorderColor 5s infinite;
+}
+@media screen and (max-width: 652px) {
+  .homeImg {
+    height: 70%;
+    width: auto;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  .logout {
+    height: 20%;
+    width: 20%;
+    font-size: 12px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .homeLi {
+    height: 30%;
+    width: 100%;
+    font-size: 10px;
+  }
+  .nxtBtn {
+    height: 15%;
+    width: 70%;
+  }
+}
+.homeLi:hover {
+  height: 55%;
+  width: 30%;
+}
+.liDiv2 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@keyframes changeBackgroundcolor {
+  0% {
+    background-color: rgb(221, 105, 105);
+  }
+  25% {
+    background-color: rgb(80, 80, 193);
+  }
+  50% {
+    background-color: rgb(108, 210, 108);
+  }
+  75% {
+    background-color: rgb(215, 215, 106);
+  }
+  100% {
+    background-color: rgb(216, 74, 198);
+  }
+}
+.nxtBtn {
+  cursor: pointer;
+  background-color: red;
+  animation: changeBackgroundcolor 5s infinite;
+  border-radius: 10px;
+  height: 90%;
+  width: 7%;
+  border-color: transparent;
+  color: white;
+  font-weight: bold;
+}
+.buttons {
+  height: 8%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
